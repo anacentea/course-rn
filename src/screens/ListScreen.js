@@ -6,6 +6,11 @@ import { ScrollView } from 'react-native-gesture-handler';
 const ListScreen = (props) => {
     console.log("created list screen");
     let image_URL={ uri: 'https://picsum.photos/200/300' }; 
+    let image_URL2={ uri: 'https://picsum.photos/300/300' }; 
+    let image_URL3={ uri: 'https://picsum.photos/400/500' }; 
+    let image_URL4={ uri: 'https://picsum.photos/500/600' }; 
+    let image_URL5={ uri: 'https://picsum.photos/40/60' }; 
+
 
     return (
         <ScrollView style={styles.container}>
@@ -27,6 +32,41 @@ const ListScreen = (props) => {
             <ImageDetail
                 title="Downloaded photo"
                 imageSource={image_URL}
+                forDownload={true}
+            ></ImageDetail>
+            <ImageDetail
+                title="Downloaded photo"
+                imageSource={image_URL}
+                forDownload={true}
+            ></ImageDetail>
+            <ImageDetail
+                title="Downloaded photo"
+                imageSource={image_URL}
+                forDownload={true}
+            ></ImageDetail>
+            <ImageDetail
+                title="Downloaded photo"
+                imageSource={image_URL}
+                forDownload={true}
+            ></ImageDetail>
+            <ImageDetail
+                title="Downloaded photo"
+                imageSource={image_URL2}
+                forDownload={true}
+            ></ImageDetail>
+            <ImageDetail
+                title="Downloaded photo"
+                imageSource={image_URL3}
+                forDownload={true}
+            ></ImageDetail>
+            <ImageDetail
+                title="Downloaded photo"
+                imageSource={image_URL4}
+                forDownload={true}
+            ></ImageDetail>
+            <ImageDetail
+                title="Downloaded photo"
+                imageSource={image_URL5}
                 forDownload={true}
             ></ImageDetail>
             <Text>Blurred images</Text>
